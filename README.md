@@ -20,7 +20,7 @@ Get the service url,
 ```shell
 $ kubectl get ksvc
 NAME      URL                                 LATESTCREATED      LATESTREADY    READY   REASON
-kbash     http://kbash.default.example.com    kbash-xyz          kbash-xyz    True
+kbash     http://kbash.default.example.com    kbash-xyz          kbash-xyz      True
 ```
 
 Invoke the service url,
