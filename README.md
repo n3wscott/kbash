@@ -9,7 +9,7 @@ _Note: this is a work in progress. Please give feedback by filing an issue._
 This tool requires [`ko`](https://github.com/google/ko) installed locally and
 [`Knative`](https://knative.dev) in the target Kubernetes cluster.
 
-To deploy the simple `now.sh` demo,
+To deploy the simple [`now.sh`](./kodata/now.sh) demo,
 
 ```shell
 ko apply -f ./config/service.yaml
@@ -35,6 +35,9 @@ Mon Mar 23 05:48:48 UTC 2020
 Change the script in `./kodata/now.sh` to your needs. The base image can be
 adjusted by editing `.ko.yaml`. The script name can be changed in
 `./config/service.yaml` (see: `value: now.sh`).
+
+_Note:_ new scripts and files must be located inside the `kodata` directory to
+allow `ko` to let them be a part of the final container.
 
 ## Local development.
 
