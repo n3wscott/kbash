@@ -1,6 +1,6 @@
 # kbash
 
-Run a bash script Kubernetes with Knative.
+Run a bash script on Kubernetes with Knative.
 
 _Note: this is a work in progress. Please give feedback by filing an issue._
 
