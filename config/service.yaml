@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: kbash
+spec:
+  template:
+    spec:
+      containers:
+      - image: ko://github.com/n3wscott/kbash/
+        env:
+        - name: SCRIPT
+          value: now.sh
